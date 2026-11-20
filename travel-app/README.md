@@ -1,3 +1,4 @@
+**Live Demo URL:** https://wanderlog-travel-app-six.vercel.app
 # 🌍 WanderLog - React Travel Companion Web Application
 
 **Module Code:** COMP10013 - Dynamic Web Technologies  
@@ -36,4 +37,5 @@ Follow these steps to clone, install, and run the project locally:
 
 1. **Clone the GitHub Repository**:
    ```bash
-   git clone [https://github.com/YOUR-USERNAME/travel-app.git](https://github.com/YOUR-USERNAME/travel-app.git)
+   git clone [git clone https://github.com/xurunyu016/wanderlog-travel-app.git
+cd wanderlog-travel-app/travel-app](https://github.com/YOUR-USERNAME/travel-app.git)
