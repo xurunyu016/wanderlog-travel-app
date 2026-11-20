@@ -1,0 +1,326 @@
+/* Global Reset & Base Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+
+/* Header & Statistics Bar */
+.app-header {
+  background: linear-gradient(135deg, #0f766e, #0284c7);
+  color: white;
+  padding: 28px 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+.app-header p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 12px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-num {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Layout Grid */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 0 16px;
+}
+
+@media (min-width: 840px) {
+  .main-content {
+    grid-template-columns: 390px 1fr;
+    align-items: start;
+  }
+}
+
+/* Card & Form Styling */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  color: #0f766e;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #f8fafc;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #0284c7;
+  background: white;
+}
+
+.api-input-group {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.btn-primary {
+  background-color: #0f766e;
+  color: white;
+  width: 100%;
+}
+
+.btn-secondary {
+  background-color: #e2e8f0;
+  color: #334155;
+  white-space: nowrap;
+}
+
+.btn-danger-outline {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Camera Preview Box */
+.camera-box {
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.video-preview {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.camera-actions,
+.camera-controls,
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.photo-preview img {
+  width: 100%;
+  max-height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.error-text {
+  color: #dc2626;
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8rem;
+}
+
+/* Search & Filter Controls */
+.controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  background: white;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  background: #e2e8f0;
+  color: #475569;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+}
+
+.filter-btn.active {
+  background: #0f766e;
+  color: white;
+}
+
+/* Trip Cards List */
+.trip-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.trip-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.trip-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-card-body {
+  padding: 18px;
+}
+
+.trip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.badge-done {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badge-plan {
+  background: #fef9c3;
+  color: #a16207;
+}
+
+.trip-meta {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.trip-notes {
+  background: #f8fafc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  border-left: 3px solid #0284c7;
+}
+
+.trip-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn-edit {
+  background: #e0f2fe;
+  color: #0369a1;
+  flex: 1;
+}
+
+.btn-delete {
+  background: #fee2e2;
+  color: #b91c1c;
+  flex: 1;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  color: #94a3b8;
+}
