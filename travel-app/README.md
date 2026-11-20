@@ -37,5 +37,5 @@ Follow these steps to clone, install, and run the project locally:
 
 1. **Clone the GitHub Repository**:
    ```bash
-   git clone [git clone https://github.com/xurunyu016/wanderlog-travel-app.git
-cd wanderlog-travel-app/travel-app](https://github.com/YOUR-USERNAME/travel-app.git)
+   git clone https://github.com/xurunyu016/wanderlog-travel-app.git
+cd wanderlog-travel-app/travel-app
